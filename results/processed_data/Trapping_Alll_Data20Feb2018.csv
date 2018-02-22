@@ -1,0 +1,349 @@
+Pot..,Location,Genotype,Treatment,Dead_0,Treat,ShootWeight,RootWeight,NodWeight,NodNum,Shoot_Root,Range
+1,France ,W6 5326,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+2,France ,W6 5326,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+3,France ,W6 5326,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+4,France ,W6 5326,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+5,France ,W6 5326,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+6,France ,W6 5326,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+7,France ,W6 5326,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+8,France ,W6 5326,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+9,France ,W6 5326,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+10,France ,W6 5326,PT-Frizeta2,1,Soil,NA,NA,NA,NA,NA,Native
+11,France ,W6 5326,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Native
+12,France ,W6 5326,PT-Frizeta2,1,Soil,NA,NA,NA,NA,NA,Native
+13,France ,W6 5326,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+14,France ,W6 5326,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+15,France ,W6 5326,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+16,France ,W6 5326,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+17,France ,W6 5326,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+18,France ,W6 5326,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+19,France ,W6 5326,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+20,France ,W6 5326,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+21,France ,W6 5326,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+22,France ,W6 5326,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+23,France ,W6 5326,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+24,France ,W6 5326,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+25,France ,W6 5326,Rhizobia,0,WSM,NA,NA,NA,NA,NA,Native
+26,France ,W6 5326,Rhizobia,1,WSM,0.158,0.0228,0.0025,14,6.929824561,Native
+27,France ,W6 5326,Rhizobia,1,WSM,0.0702,0.0118,0.0012,19,5.949152542,Native
+28,France ,W6 5326,Buffer,1,Buffer,NA,NA,NA,NA,NA,Native
+29,France ,W6 5326,Buffer,1,Buffer,NA,NA,NA,NA,NA,Native
+30,France ,W6 5326,Buffer,1,Buffer,0.006,0.0018,NA,NA,3.333333333,Native
+31,Spain,PI 319034,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+32,Spain,PI 319034,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+33,Spain,PI 319034,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+34,Spain,PI 319034,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+35,Spain,PI 319034,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+36,Spain,PI 319034,PT-CMNS4,1,Soil,NA,NA,NA,NA,NA,Native
+37,Spain,PI 319034,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+38,Spain,PI 319034,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+39,Spain,PI 319034,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+40,Spain,PI 319034,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Native
+41,Spain,PI 319034,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Native
+42,Spain,PI 319034,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Native
+43,Spain,PI 319034,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+44,Spain,PI 319034,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Native
+45,Spain,PI 319034,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Native
+46,Spain,PI 319034,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+47,Spain,PI 319034,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+48,Spain,PI 319034,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+49,Spain,PI 319034,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+50,Spain,PI 319034,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+51,Spain,PI 319034,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+52,Spain,PI 319034,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+53,Spain,PI 319034,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+54,Spain,PI 319034,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+55,Spain,PI 319034,Rhizobia,1,WSM,0.0813,0.007,0.0052,19,11.61428571,Native
+56,Spain,PI 319034,Rhizobia,1,WSM,0.0346,0.0091,7.00E-04,14,3.802197802,Native
+57,Spain,PI 319034,Rhizobia,1,WSM,0.0089,0.0068,1.00E-04,8,1.308823529,Native
+58,Spain,PI 319034,Buffer,0,Buffer,NA,NA,NA,NA,NA,Native
+59,Spain,PI 319034,Buffer,1,Buffer,0.0087,0.0012,NA,NA,7.25,Native
+60,Spain,PI 319034,Buffer,1,Buffer,0.0044,0.0036,NA,NA,1.222222222,Native
+61,Portugal,PI 493293,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+62,Portugal,PI 493293,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+63,Portugal,PI 493293,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+64,Portugal,PI 493293,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+65,Portugal,PI 493293,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+66,Portugal,PI 493293,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+67,Portugal,PI 493293,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+68,Portugal,PI 493293,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+69,Portugal,PI 493293,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+70,Portugal,PI 493293,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Native
+71,Portugal,PI 493293,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Native
+72,Portugal,PI 493293,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Native
+73,Portugal,PI 493293,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Native
+74,Portugal,PI 493293,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+75,Portugal,PI 493293,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Native
+76,Portugal,PI 493293,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+77,Portugal,PI 493293,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+78,Portugal,PI 493293,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+79,Portugal,PI 493293,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+80,Portugal,PI 493293,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+81,Portugal,PI 493293,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+82,Portugal,PI 493293,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+83,Portugal,PI 493293,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+84,Portugal,PI 493293,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+85,Portugal,PI 493293,Rhizobia,1,WSM,0.0075,0.0031,2.00E-04,15,2.419354839,Native
+86,Portugal,PI 493293,Rhizobia,1,WSM,0.0215,0.0083,0.0041,52,2.590361446,Native
+87,Portugal,PI 493293,Rhizobia,1,WSM,0.01606,0.0107,0.001,43,1.500934579,Native
+88,Portugal,PI 493293,Buffer,1,Buffer,0.0092,0.0034,NA,NA,2.705882353,Native
+89,Portugal,PI 493293,Buffer,1,Buffer,0.0102,0.0035,NA,NA,2.914285714,Native
+90,Portugal,PI 493293,Buffer,1,Buffer,0.009,0.0019,NA,NA,4.736842105,Native
+91,Spain,W6 5325,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+92,Spain,W6 5325,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+93,Spain,W6 5325,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+94,Spain,W6 5325,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+95,Spain,W6 5325,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+96,Spain,W6 5325,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+97,Spain,W6 5325,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+98,Spain,W6 5325,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+99,Spain,W6 5325,PT-GilNS2,1,Soil,NA,NA,NA,NA,NA,Native
+100,Spain,W6 5325,PT-Frizeta2,1,Soil,NA,NA,NA,NA,NA,Native
+101,Spain,W6 5325,PT-Frizeta2,1,Soil,NA,NA,NA,NA,NA,Native
+102,Spain,W6 5325,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Native
+103,Spain,W6 5325,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Native
+104,Spain,W6 5325,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Native
+105,Spain,W6 5325,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Native
+106,Spain,W6 5325,FL-Polatka1,1,Soil,NA,NA,NA,NA,NA,Native
+107,Spain,W6 5325,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+108,Spain,W6 5325,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+109,Spain,W6 5325,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+110,Spain,W6 5325,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+111,Spain,W6 5325,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+112,Spain,W6 5325,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+113,Spain,W6 5325,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+114,Spain,W6 5325,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+115,Spain,W6 5325,Rhizobia,1,WSM,0.1205,0.0167,0.0015,12,7.215568862,Native
+116,Spain,W6 5325,Rhizobia,1,WSM,0.146,0.0185,0.0057,8,7.891891892,Native
+117,Spain,W6 5325,Rhizobia,1,WSM,0.0702,0.0183,0.0022,35,3.836065574,Native
+118,Spain,W6 5325,Buffer,1,Buffer,NA,NA,NA,NA,NA,Native
+119,Spain,W6 5325,Buffer,1,Buffer,0.0141,0.004,NA,NA,3.525,Native
+120,Spain,W6 5325,Buffer,1,Buffer,0.0106,0.0044,NA,NA,2.409090909,Native
+121,Italy,W6 5595,PT-MRMtr1,1,Soil,NA,NA,NA,NA,NA,Native
+122,Italy,W6 5595,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+123,Italy,W6 5595,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+124,Italy,W6 5595,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+125,Italy,W6 5595,PT-CMNS4,1,Soil,NA,NA,NA,NA,NA,Native
+127,Italy,W6 5595,PT-GilNS2,1,Soil,NA,NA,NA,NA,NA,Native
+128,Italy,W6 5595,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+129,Italy,W6 5595,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+133,Italy,W6 5595,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+134,Italy,W6 5595,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+135,Italy,W6 5595,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+136,Italy,W6 5595,FL-Polatka1,1,Soil,NA,NA,NA,NA,NA,Native
+137,Italy,W6 5595,FL-Polatka1,1,Soil,NA,NA,NA,NA,NA,Native
+138,Italy,W6 5595,FL-Polatka1,1,Soil,NA,NA,NA,NA,NA,Native
+142,Italy,W6 5595,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+143,Italy,W6 5595,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+144,Italy,W6 5595,FL-StAug1,1,Soil,NA,NA,NA,NA,NA,Native
+145,Italy,W6 5595,Rhizobia,1,WSM,0.0933,0.0188,0.0044,42,4.962765957,Native
+146,Italy,W6 5595,Rhizobia,1,WSM,0.1483,0.0189,0.0053,29,7.846560847,Native
+147,Italy,W6 5595,Rhizobia,1,WSM,0.1009,0.0155,0.0051,28,6.509677419,Native
+148,Italy,W6 5595,Buffer,1,Buffer,0.0223,0.0134,NA,NA,1.664179104,Native
+149,Italy,W6 5595,Buffer,1,Buffer,0.0102,0.01,NA,NA,1.02,Native
+150,Italy,W6 5595,Buffer,1,Buffer,0.02,0.0179,NA,NA,1.117318436,Native
+151,Portugal,PI 493291,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+152,Portugal,PI 493291,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+153,Portugal,PI 493291,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Native
+154,Portugal,PI 493291,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+155,Portugal,PI 493291,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Native
+156,Portugal,PI 493291,PT-CMNS4,1,Soil,NA,NA,NA,NA,NA,Native
+157,Portugal,PI 493291,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+158,Portugal,PI 493291,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+159,Portugal,PI 493291,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Native
+160,Portugal,PI 493291,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Native
+161,Portugal,PI 493291,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Native
+162,Portugal,PI 493291,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Native
+163,Portugal,PI 493291,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+164,Portugal,PI 493291,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Native
+165,Portugal,PI 493291,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Native
+166,Portugal,PI 493291,FL-Polatka1,1,Soil,NA,NA,NA,NA,NA,Native
+167,Portugal,PI 493291,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+168,Portugal,PI 493291,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Native
+169,Portugal,PI 493291,FL-Rivercrest2,1,Soil,NA,NA,NA,NA,NA,Native
+170,Portugal,PI 493291,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+171,Portugal,PI 493291,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Native
+172,Portugal,PI 493291,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+173,Portugal,PI 493291,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+174,Portugal,PI 493291,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Native
+175,Portugal,PI 493291,Rhizobia,1,WSM,NA,NA,NA,NA,NA,Native
+175,Malta ,W6 5375,Rhizobia,1,WSM,NA,NA,NA,NA,NA,Native
+176,Portugal,PI 493291,Rhizobia,1,WSM,NA,NA,NA,NA,NA,Native
+176,Malta ,W6 5375,Rhizobia,1,WSM,0.1017,0.0086,0.0012,41,11.8255814,Native
+177,Portugal,PI 493291,Rhizobia,1,WSM,NA,NA,NA,NA,NA,Native
+177,Malta ,W6 5375,Rhizobia,1,WSM,0.115,0.0014,1.00E-04,8,82.14285714,Native
+178,Portugal,PI 493291,Buffer,1,Buffer,NA,NA,NA,NA,NA,Native
+178,Malta ,W6 5375,Buffer,1,Buffer,0.0122,0.0032,NA,NA,3.8125,Native
+179,Portugal,PI 493291,Buffer,1,Buffer,NA,NA,NA,NA,NA,Native
+179,Malta ,W6 5375,Buffer,1,Buffer,0.08,0.0045,NA,NA,17.77777778,Native
+180,Portugal,PI 493291,Buffer,1,Buffer,NA,NA,NA,NA,NA,Native
+180,Malta ,W6 5375,Buffer,1,Buffer,NA,NA,NA,NA,NA,Native
+181,Australia,PI 197336,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+182,Australia,PI 197336,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+183,Australia,PI 197336,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Invaded
+184,Australia,PI 197336,PT-CMNS4,1,Soil,NA,NA,NA,NA,NA,Invaded
+185,Australia,PI 197336,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+186,Australia,PI 197336,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+187,Australia,PI 197336,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+188,Australia,PI 197336,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+189,Australia,PI 197336,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+190,Australia,PI 197336,PT-Frizeta2,1,Soil,NA,NA,NA,NA,NA,Invaded
+191,Australia,PI 197336,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Invaded
+192,Australia,PI 197336,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Invaded
+193,Australia,PI 197336,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Invaded
+194,Australia,PI 197336,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Invaded
+195,Australia,PI 197336,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Invaded
+196,Australia,PI 197336,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+197,Australia,PI 197336,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+198,Australia,PI 197336,FL-Polatka1,1,Soil,NA,NA,NA,NA,NA,Invaded
+199,Australia,PI 197336,FL-Rivercrest2,1,Soil,NA,NA,NA,NA,NA,Invaded
+200,Australia,PI 197336,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Invaded
+201,Australia,PI 197336,FL-Rivercrest2,1,Soil,NA,NA,NA,NA,NA,Invaded
+202,Australia,PI 197336,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+203,Australia,PI 197336,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+204,Australia,PI 197336,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+205,Australia,PI 197336,Rhizobia,1,WSM,0.164,0.0235,0.0037,8,6.978723404,Invaded
+206,Australia,PI 197336,Rhizobia,1,WSM,0.054,0.0084,0.0012,10,6.428571429,Invaded
+207,Australia,PI 197336,Rhizobia,1,WSM,0.2229,0.0244,0.003,21,9.135245902,Invaded
+208,Australia,PI 197336,Buffer,1,Buffer,0.009,0.0045,NA,NA,2,Invaded
+209,Australia,PI 197336,Buffer,1,Buffer,0.0108,0.0062,NA,NA,1.741935484,Invaded
+210,Australia,PI 197336,Buffer,1,Buffer,0.0094,0.0019,NA,NA,4.947368421,Invaded
+211,Australia,W6 5527,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+212,Australia,W6 5527,PT-MRMtr1,1,Soil,NA,NA,NA,NA,NA,Invaded
+213,Australia,W6 5527,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+214,Australia,W6 5527,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+215,Australia,W6 5527,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+216,Australia,W6 5527,PT-CMNS4,1,Soil,NA,NA,NA,NA,NA,Invaded
+217,Australia,W6 5527,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+218,Australia,W6 5527,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+219,Australia,W6 5527,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+220,Australia,W6 5527,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Invaded
+221,Australia,W6 5527,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Invaded
+222,Australia,W6 5527,PT-Frizeta2,1,Soil,NA,NA,NA,NA,NA,Invaded
+223,Australia,W6 5527,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Invaded
+224,Australia,W6 5527,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Invaded
+225,Australia,W6 5527,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+226,Australia,W6 5527,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+227,Australia,W6 5527,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+228,Australia,W6 5527,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+229,Australia,W6 5527,FL-Rivercrest2,1,Soil,NA,NA,NA,NA,NA,Invaded
+230,Australia,W6 5527,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Invaded
+231,Australia,W6 5527,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Invaded
+232,Australia,W6 5527,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+233,Australia,W6 5527,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+234,Australia,W6 5527,FL-StAug1,1,Soil,NA,NA,NA,NA,NA,Invaded
+235,Australia,W6 5527,Rhizobia,1,WSM,0.0107,0.0026,1.00E-04,2,4.115384615,Invaded
+236,Australia,W6 5527,Rhizobia,1,WSM,0.1257,0.0456,0.0022,26,2.756578947,Invaded
+237,Australia,W6 5527,Rhizobia,1,WSM,0.1634,0.0294,0.004,34,5.557823129,Invaded
+238,Australia,W6 5527,Buffer,1,Buffer,1.00E-04,0.0035,NA,NA,0.028571429,Invaded
+239,Australia,W6 5527,Buffer,1,Buffer,0.006,0.0065,NA,NA,0.923076923,Invaded
+240,Australia,W6 5527,Buffer,1,Buffer,0.0093,0.0041,NA,NA,2.268292683,Invaded
+241,California,Mt. Wilson-4,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+242,California,Mt. Wilson-4,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+243,California,Mt. Wilson-4,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+244,California,Mt. Wilson-4,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+245,California,Mt. Wilson-4,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+246,California,Mt. Wilson-4,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+247,California,Mt. Wilson-4,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+248,California,Mt. Wilson-4,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+249,California,Mt. Wilson-4,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+250,California,Mt. Wilson-4,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Invaded
+251,California,Mt. Wilson-4,PT-Frizeta2,1,Soil,NA,NA,NA,NA,NA,Invaded
+252,California,Mt. Wilson-4,PT-Frizeta2,1,Soil,NA,NA,NA,NA,NA,Invaded
+253,California,Mt. Wilson-4,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+254,California,Mt. Wilson-4,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+255,California,Mt. Wilson-4,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+256,California,Mt. Wilson-4,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+257,California,Mt. Wilson-4,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+258,California,Mt. Wilson-4,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+259,California,Mt. Wilson-4,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Invaded
+260,California,Mt. Wilson-4,FL-Rivercrest2,1,Soil,NA,NA,NA,NA,NA,Invaded
+261,California,Mt. Wilson-4,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Invaded
+262,California,Mt. Wilson-4,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+263,California,Mt. Wilson-4,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+264,California,Mt. Wilson-4,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+265,California,Mt. Wilson-4,Rhizobia,1,WSM,0.0175,0.0082,2.00E-04,19,2.134146341,Invaded
+266,California,Mt. Wilson-4,Rhizobia,1,WSM,0.0915,0.0159,0.0029,43,5.754716981,Invaded
+267,California,Mt. Wilson-4,Rhizobia,1,WSM,0.0455,0.0087,0.0013,21,5.229885057,Invaded
+268,California,Mt. Wilson-4,Buffer,1,Buffer,NA,NA,NA,NA,NA,Invaded
+269,California,Mt. Wilson-4,Buffer,1,Buffer,NA,NA,NA,NA,NA,Invaded
+270,California,Mt. Wilson-4,Buffer,1,Buffer,NA,NA,NA,NA,NA,Invaded
+271,Florida,Polatka-3,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+272,Florida,Polatka-3,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+273,Florida,Polatka-3,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+274,Florida,Polatka-3,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+275,Florida,Polatka-3,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+276,Florida,Polatka-3,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+277,Florida,Polatka-3,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+278,Florida,Polatka-3,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+279,Florida,Polatka-3,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+281,Florida,Polatka-3,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Invaded
+282,Florida,Polatka-3,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Invaded
+283,Florida,Polatka-3,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+284,Florida,Polatka-3,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+285,Florida,Polatka-3,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+286,Florida,Polatka-3,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+287,Florida,Polatka-3,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+288,Florida,Polatka-3,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+290,Florida,Polatka-3,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Invaded
+291,Florida,Polatka-3,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Invaded
+292,Florida,Polatka-3,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+293,Florida,Polatka-3,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+294,Florida,Polatka-3,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+295,Florida,Polatka-3,Rhizobia,1,WSM,0.027,0.0042,0.004,6,6.428571429,Invaded
+296,Florida,Polatka-3,Rhizobia,1,WSM,0.1173,0.0137,5.00E-04,19,8.562043796,Invaded
+297,Florida,Polatka-3,Rhizobia,1,WSM,0.0137,0.0046,0.0012,13,2.97826087,Invaded
+298,Florida,Polatka-3,Buffer,1,Buffer,NA,NA,NA,NA,NA,Invaded
+299,Florida,Polatka-3,Buffer,1,Buffer,NA,NA,NA,NA,NA,Invaded
+300,Florida,Polatka-3,Buffer,1,Buffer,NA,NA,NA,NA,NA,Invaded
+301,Chile,PI 368958,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+302,Chile,PI 368958,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+303,Chile,PI 368958,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+304,Chile,PI 368958,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+305,Chile,PI 368958,PT-CMNS4,1,Soil,NA,NA,NA,NA,NA,Invaded
+306,Chile,PI 368958,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+307,Chile,PI 368958,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+308,Chile,PI 368958,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+309,Chile,PI 368958,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+310,Chile,PI 368958,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Invaded
+311,Chile,PI 368958,PT-Frizeta2,1,Soil,NA,NA,NA,NA,NA,Invaded
+312,Chile,PI 368958,PT-Frizeta2,0,Soil,NA,NA,NA,NA,NA,Invaded
+313,Chile,PI 368958,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+314,Chile,PI 368958,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+315,Chile,PI 368958,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Invaded
+316,Chile,PI 368958,FL-Polatka1,1,Soil,NA,NA,NA,NA,NA,Invaded
+317,Chile,PI 368958,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+318,Chile,PI 368958,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+319,Chile,PI 368958,FL-Rivercrest2,1,Soil,NA,NA,NA,NA,NA,Invaded
+320,Chile,PI 368958,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Invaded
+321,Chile,PI 368958,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Invaded
+322,Chile,PI 368958,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+323,Chile,PI 368958,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+324,Chile,PI 368958,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+325,Chile,PI 368958,Rhizobia,1,WSM,0.0055,0.002,4.00E-04,7,2.75,Invaded
+326,Chile,PI 368958,Rhizobia,1,WSM,0.0105,0.0044,7.00E-04,25,2.386363636,Invaded
+327,Chile,PI 368958,Rhizobia,1,WSM,0.027,0.0053,0.0032,17,5.094339623,Invaded
+328,Chile,PI 368958,Buffer,0,Buffer,NA,NA,NA,NA,NA,Invaded
+329,Chile,PI 368958,Buffer,1,Buffer,0.0052,0.0041,NA,NA,1.268292683,Invaded
+330,Chile,PI 368958,Buffer,1,Buffer,0.006,0.0057,NA,NA,1.052631579,Invaded
+331,Florida,St. Aug-13,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+332,Florida,St. Aug-13,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+333,Florida,St. Aug-13,PT-MRMtr1,0,Soil,NA,NA,NA,NA,NA,Invaded
+334,Florida,St. Aug-13,PT-CMNS4,0,Soil,NA,NA,NA,NA,NA,Invaded
+337,Florida,St. Aug-13,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+338,Florida,St. Aug-13,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+339,Florida,St. Aug-13,PT-GilNS2,0,Soil,NA,NA,NA,NA,NA,Invaded
+343,Florida,St. Aug-13,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+344,Florida,St. Aug-13,FL-UF4,0,Soil,NA,NA,NA,NA,NA,Invaded
+345,Florida,St. Aug-13,FL-UF4,1,Soil,NA,NA,NA,NA,NA,Invaded
+346,Florida,St. Aug-13,FL-Polatka1,0,Soil,NA,NA,NA,NA,NA,Invaded
+351,Florida,St. Aug-13,FL-Rivercrest2,0,Soil,NA,NA,NA,NA,NA,Invaded
+352,Florida,St. Aug-13,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+353,Florida,St. Aug-13,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+354,Florida,St. Aug-13,FL-StAug1,0,Soil,NA,NA,NA,NA,NA,Invaded
+355,Florida,St. Aug-13,Rhizobia,1,WSM,0.0085,0.0014,1.00E-04,11,6.071428571,Invaded
+356,Florida,St. Aug-13,Rhizobia,1,WSM,0.0041,0.0019,9.00E-04,19,2.157894737,Invaded
+357,Florida,St. Aug-13,Rhizobia,1,WSM,0.0025,7.00E-04,1.00E-04,6,3.571428571,Invaded
+358,Florida,St. Aug-13,Buffer,1,Buffer,NA,NA,NA,NA,NA,Invaded
+359,Florida,St. Aug-13,Buffer,1,Buffer,NA,NA,NA,NA,NA,Invaded
+360,Florida,St. Aug-13,Buffer,1,Buffer,NA,NA,NA,NA,NA,Invaded

@@ -1,0 +1,121 @@
+"Pot","Genotype","Habitat","Range","Position","Treatment","Inoculate","SoilConc","SoilLocation","Match","DeadOrAlive","WeekstoDie","RootWeight","ShootWeight","NodWeight","NodNum","PodNum","Shoot_Root"
+1,"StAug2","FL","Invasive",18,1,"Buffer","none","none",NA,"Alive",NA,3e-04,2e-04,0.0021,2,0,0.666666666666667
+2,"StAug2","FL","Invasive",98,1,"Buffer","none","none",NA,"Alive",NA,0.0203,0.0605,NA,0,0,2.98029556650246
+3,"StAug2","FL","Invasive",119,1,"Buffer","none","none",NA,"Alive",NA,0.0035,0.0042,NA,0,0,1.2
+4,"StAug2","FL","Invasive",94,1,"Buffer","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+5,"StAug2","FL","Invasive",117,1,"Buffer","none","none",NA,"Alive",NA,0.0023,0.0029,NA,0,0,1.26086956521739
+6,"StAug2","FL","Invasive",109,1,"Buffer","none","none",NA,"Dead",3,NA,NA,NA,NA,NA,NA
+7,"StAug2","FL","Invasive",54,2,"WSM","none","none",NA,"Alive",NA,0.0302,0.18,0.0028,18,7,5.96026490066225
+8,"StAug2","FL","Invasive",74,2,"WSM","none","none",NA,"Alive",NA,0.0223,0.141,0.0027,22,3,6.32286995515695
+9,"StAug2","FL","Invasive",48,2,"WSM","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+10,"StAug2","FL","Invasive",3,2,"WSM","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+11,"StAug2","FL","Invasive",28,2,"WSM","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+12,"StAug2","FL","Invasive",66,2,"WSM","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+13,"StAug2","FL","Invasive",96,3,"Buffer","high","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+14,"StAug2","FL","Invasive",19,3,"Buffer","high","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+15,"StAug2","FL","Invasive",36,3,"Buffer","high","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+16,"StAug2","FL","Invasive",20,3,"Buffer","high","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+17,"StAug2","FL","Invasive",90,3,"Buffer","high","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+18,"StAug2","FL","Invasive",32,3,"Buffer","high","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+19,"StAug2","FL","Invasive",68,4,"Buffer","low","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+20,"StAug2","FL","Invasive",82,4,"Buffer","low","FL","Same","Alive",NA,7e-04,0.0038,NA,0,0,5.42857142857143
+21,"StAug2","FL","Invasive",2,4,"Buffer","low","FL","Same","Alive",NA,0.0014,0.003,NA,0,0,2.14285714285714
+22,"StAug2","FL","Invasive",61,4,"Buffer","low","FL","Same","Alive",NA,8e-04,0.0027,NA,0,0,3.375
+23,"StAug2","FL","Invasive",38,4,"Buffer","low","FL","Same","Dead",6,NA,NA,NA,NA,NA,NA
+24,"StAug2","FL","Invasive",6,4,"Buffer","low","FL","Same","Dead",6,NA,NA,NA,NA,NA,NA
+25,"StAug2","FL","Invasive",30,5,"WSM","low","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+26,"StAug2","FL","Invasive",112,5,"WSM","low","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+27,"StAug2","FL","Invasive",69,5,"WSM","low","FL","Same","Alive",NA,0.0094,0.0907,7e-04,3,3,9.64893617021277
+28,"StAug2","FL","Invasive",12,5,"WSM","low","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+29,"StAug2","FL","Invasive",25,5,"WSM","low","FL","Same","Alive",NA,0.0326,0.2378,0.0023,10,8,7.29447852760736
+30,"StAug2","FL","Invasive",56,5,"WSM","low","FL","Same","Alive",NA,0.0237,0.277,0.0023,12,11,11.6877637130802
+31,"StAug2","FL","Invasive",75,6,"WSM","high","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+32,"StAug2","FL","Invasive",62,6,"WSM","high","FL","Same","Dead",2,NA,NA,NA,NA,NA,NA
+33,"StAug2","FL","Invasive",35,6,"WSM","high","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+34,"StAug2","FL","Invasive",108,6,"WSM","high","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+35,"StAug2","FL","Invasive",76,6,"WSM","high","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+36,"StAug2","FL","Invasive",72,6,"WSM","high","FL","Same","Dead",1,NA,NA,NA,NA,NA,NA
+37,"StAug2","FL","Invasive",57,7,"Buffer","high","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+38,"StAug2","FL","Invasive",97,7,"Buffer","high","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+39,"StAug2","FL","Invasive",116,7,"Buffer","high","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+40,"StAug2","FL","Invasive",16,7,"Buffer","high","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+41,"StAug2","FL","Invasive",70,7,"Buffer","high","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+42,"StAug2","FL","Invasive",63,7,"Buffer","high","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+43,"StAug2","FL","Invasive",13,8,"Buffer","low","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+44,"StAug2","FL","Invasive",107,8,"Buffer","low","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+45,"StAug2","FL","Invasive",78,8,"Buffer","low","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+46,"StAug2","FL","Invasive",58,8,"Buffer","low","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+47,"StAug2","FL","Invasive",73,8,"Buffer","low","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+48,"StAug2","FL","Invasive",102,8,"Buffer","low","PT","Different","Alive",NA,0.0153,0.1284,0.0021,7,4,8.3921568627451
+49,"StAug2","FL","Invasive",34,9,"WSM","low","PT","Different","Alive",NA,0.0152,0.1815,9e-04,5,6,11.9407894736842
+50,"StAug2","FL","Invasive",120,9,"WSM","low","PT","Different","Alive",NA,0.0336,0.2243,0.0023,16,10,6.67559523809524
+51,"StAug2","FL","Invasive",92,9,"WSM","low","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+52,"StAug2","FL","Invasive",24,9,"WSM","low","PT","Different","Alive",NA,0.0177,0.1183,0.0021,7,5,6.68361581920904
+53,"StAug2","FL","Invasive",80,9,"WSM","low","PT","Different","Alive",NA,0.0428,0.399,0.0044,10,11,9.32242990654206
+54,"StAug2","FL","Invasive",8,9,"WSM","low","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+55,"StAug2","FL","Invasive",111,10,"WSM","high","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+56,"StAug2","FL","Invasive",85,10,"WSM","high","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+57,"StAug2","FL","Invasive",39,10,"WSM","high","PT","Different","Alive",NA,0.0362,0.1971,0.0026,10,8,5.44475138121547
+58,"StAug2","FL","Invasive",45,10,"WSM","high","PT","Different","Alive",NA,0.017,0.1582,5e-04,18,5,9.30588235294118
+59,"StAug2","FL","Invasive",71,10,"WSM","high","PT","Different","Dead",1,NA,NA,NA,NA,NA,NA
+60,"StAug2","FL","Invasive",37,10,"WSM","high","PT","Different","Alive",NA,0.0182,0.2013,0.0037,11,9,11.0604395604396
+61,"PI493292","PT"," Native",53,1,"Buffer","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+62,"PI493292","PT"," Native",17,1,"Buffer","none","none",NA,"Alive",NA,0.0087,0.0072,NA,0,0,0.827586206896552
+63,"PI493292","PT"," Native",101,1,"Buffer","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+64,"PI493292","PT"," Native",67,1,"Buffer","none","none",NA,"Alive",NA,0.0048,0.01,NA,0,0,2.08333333333333
+65,"PI493292","PT"," Native",86,1,"Buffer","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+66,"PI493292","PT"," Native",40,1,"Buffer","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+67,"PI493292","PT"," Native",104,2,"WSM","none","none",NA,"Alive",NA,0.0868,0.2077,0.0086,29,0,2.39285714285714
+68,"PI493292","PT"," Native",105,2,"WSM","none","none",NA,"Alive",NA,0.1134,0.1699,0.0056,30,1,1.49823633156966
+69,"PI493292","PT"," Native",89,2,"WSM","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+70,"PI493292","PT"," Native",115,2,"WSM","none","none",NA,"Alive",NA,0.0673,0.48,0.0093,14,9,7.13224368499257
+71,"PI493292","PT"," Native",64,2,"WSM","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+72,"PI493292","PT"," Native",9,2,"WSM","none","none",NA,"Dead",1,NA,NA,NA,NA,NA,NA
+73,"PI493292","PT"," Native",43,3,"Buffer","high","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+74,"PI493292","PT"," Native",100,3,"Buffer","high","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+75,"PI493292","PT"," Native",79,3,"Buffer","high","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+76,"PI493292","PT"," Native",22,3,"Buffer","high","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+77,"PI493292","PT"," Native",31,3,"Buffer","high","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+78,"PI493292","PT"," Native",47,3,"Buffer","high","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+79,"PI493292","PT"," Native",99,4,"Buffer","low","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+80,"PI493292","PT"," Native",27,4,"Buffer","low","FL","Different","Alive",NA,0.0037,0.005,NA,0,0,1.35135135135135
+81,"PI493292","PT"," Native",46,4,"Buffer","low","FL","Different","Alive",NA,0.009,0.0157,NA,0,0,1.74444444444444
+82,"PI493292","PT"," Native",83,4,"Buffer","low","FL","Different","Alive",NA,0.0063,0.004,NA,0,0,0.634920634920635
+83,"PI493292","PT"," Native",7,4,"Buffer","low","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+84,"PI493292","PT"," Native",81,4,"Buffer","low","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+85,"PI493292","PT"," Native",88,5,"WSM","low","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+86,"PI493292","PT"," Native",52,5,"WSM","low","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+87,"PI493292","PT"," Native",33,5,"WSM","low","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+88,"PI493292","PT"," Native",65,5,"WSM","low","FL","Different","Alive",NA,0.1034,0.3505,0.0109,23,0,3.38974854932302
+89,"PI493292","PT"," Native",29,5,"WSM","low","FL","Different","Alive",NA,0.1184,0.3669,0.008,30,1,3.09881756756757
+90,"PI493292","PT"," Native",60,5,"WSM","low","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+91,"PI493292","PT"," Native",59,6,"WSM","high","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+92,"PI493292","PT"," Native",21,6,"WSM","high","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+93,"PI493292","PT"," Native",84,6,"WSM","high","FL","Different","Dead",1,NA,NA,NA,NA,NA,NA
+94,"PI493292","PT"," Native",11,6,"WSM","high","FL","Different","Alive",NA,0.0311,0.28,0.0023,14,9,9.0032154340836
+95,"PI493292","PT"," Native",55,6,"WSM","high","FL","Different","Alive",NA,0.048,0.1997,0.0026,18,10,4.16041666666667
+96,"PI493292","PT"," Native",110,6,"WSM","high","FL","Different","Alive",NA,0.0449,0.3333,0.0051,19,7,7.42316258351893
+97,"PI493292","PT"," Native",44,7,"Buffer","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+98,"PI493292","PT"," Native",77,7,"Buffer","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+99,"PI493292","PT"," Native",14,7,"Buffer","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+100,"PI493292","PT"," Native",113,7,"Buffer","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+101,"PI493292","PT"," Native",51,7,"Buffer","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+102,"PI493292","PT"," Native",1,7,"Buffer","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+103,"PI493292","PT"," Native",91,8,"Buffer","low","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+104,"PI493292","PT"," Native",95,8,"Buffer","low","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+105,"PI493292","PT"," Native",114,8,"Buffer","low","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+106,"PI493292","PT"," Native",4,8,"Buffer","low","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+107,"PI493292","PT"," Native",26,8,"Buffer","low","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+108,"PI493292","PT"," Native",93,8,"Buffer","low","PT","Same","Alive",NA,0.0232,0.1235,0.0036,9,6,5.32327586206897
+109,"PI493292","PT"," Native",41,9,"WSM","low","PT","Same","Alive",NA,0.102,0.517,0.008,38,9,5.06862745098039
+110,"PI493292","PT"," Native",103,9,"WSM","low","PT","Same","Alive",NA,0.045,0.3922,0.0032,18,4,8.71555555555556
+111,"PI493292","PT"," Native",10,9,"WSM","low","PT","Same","Alive",NA,0.0754,0.3942,0.0076,42,4,5.22811671087533
+112,"PI493292","PT"," Native",23,9,"WSM","low","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+113,"PI493292","PT"," Native",5,9,"WSM","low","PT","Same","Alive",NA,0.0787,0.718,0.0055,26,11,9.12325285895807
+114,"PI493292","PT"," Native",118,9,"WSM","low","PT","Same","Alive",NA,0.0565,0.3477,0.0044,28,9,6.15398230088496
+115,"PI493292","PT"," Native",50,10,"WSM","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+116,"PI493292","PT"," Native",49,10,"WSM","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+117,"PI493292","PT"," Native",106,10,"WSM","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+118,"PI493292","PT"," Native",15,10,"WSM","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+119,"PI493292","PT"," Native",42,10,"WSM","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA
+120,"PI493292","PT"," Native",87,10,"WSM","high","PT","Same","Dead",1,NA,NA,NA,NA,NA,NA

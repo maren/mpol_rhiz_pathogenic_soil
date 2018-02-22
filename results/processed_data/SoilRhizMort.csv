@@ -1,0 +1,121 @@
+Pot,Genotype,Habitat,Range,Position,Treatment,Inoculate,SoilConc,SoilLocation,Match,DeadOrAlive,WeekstoDie
+1,StAug2,FL,Invasive,18,1,Buffer,none,none,NA,Alive,NA
+2,StAug2,FL,Invasive,98,1,Buffer,none,none,NA,Alive,NA
+3,StAug2,FL,Invasive,119,1,Buffer,none,none,NA,Alive,NA
+4,StAug2,FL,Invasive,94,1,Buffer,none,none,NA,Dead,1
+5,StAug2,FL,Invasive,117,1,Buffer,none,none,NA,Alive,NA
+6,StAug2,FL,Invasive,109,1,Buffer,none,none,NA,Dead,3
+7,StAug2,FL,Invasive,54,2,WSM,none,none,NA,Alive,NA
+8,StAug2,FL,Invasive,74,2,WSM,none,none,NA,Alive,NA
+9,StAug2,FL,Invasive,48,2,WSM,none,none,NA,Dead,1
+10,StAug2,FL,Invasive,3,2,WSM,none,none,NA,Dead,1
+11,StAug2,FL,Invasive,28,2,WSM,none,none,NA,Dead,1
+12,StAug2,FL,Invasive,66,2,WSM,none,none,NA,Dead,1
+13,StAug2,FL,Invasive,96,3,Buffer,high,FL,Same,Dead,1
+14,StAug2,FL,Invasive,19,3,Buffer,high,FL,Same,Dead,1
+15,StAug2,FL,Invasive,36,3,Buffer,high,FL,Same,Dead,1
+16,StAug2,FL,Invasive,20,3,Buffer,high,FL,Same,Dead,1
+17,StAug2,FL,Invasive,90,3,Buffer,high,FL,Same,Dead,1
+18,StAug2,FL,Invasive,32,3,Buffer,high,FL,Same,Dead,1
+19,StAug2,FL,Invasive,68,4,Buffer,low,FL,Same,Dead,1
+20,StAug2,FL,Invasive,82,4,Buffer,low,FL,Same,Alive,NA
+21,StAug2,FL,Invasive,2,4,Buffer,low,FL,Same,Alive,NA
+22,StAug2,FL,Invasive,61,4,Buffer,low,FL,Same,Alive,NA
+23,StAug2,FL,Invasive,38,4,Buffer,low,FL,Same,Dead,6
+24,StAug2,FL,Invasive,6,4,Buffer,low,FL,Same,Dead,6
+25,StAug2,FL,Invasive,30,5,WSM,low,FL,Same,Dead,1
+26,StAug2,FL,Invasive,112,5,WSM,low,FL,Same,Dead,1
+27,StAug2,FL,Invasive,69,5,WSM,low,FL,Same,Alive,NA
+28,StAug2,FL,Invasive,12,5,WSM,low,FL,Same,Dead,1
+29,StAug2,FL,Invasive,25,5,WSM,low,FL,Same,Alive,NA
+30,StAug2,FL,Invasive,56,5,WSM,low,FL,Same,Alive,NA
+31,StAug2,FL,Invasive,75,6,WSM,high,FL,Same,Dead,1
+32,StAug2,FL,Invasive,62,6,WSM,high,FL,Same,Dead,2
+33,StAug2,FL,Invasive,35,6,WSM,high,FL,Same,Dead,1
+34,StAug2,FL,Invasive,108,6,WSM,high,FL,Same,Dead,1
+35,StAug2,FL,Invasive,76,6,WSM,high,FL,Same,Dead,1
+36,StAug2,FL,Invasive,72,6,WSM,high,FL,Same,Dead,1
+37,StAug2,FL,Invasive,57,7,Buffer,high,PT,Different,Dead,1
+38,StAug2,FL,Invasive,97,7,Buffer,high,PT,Different,Dead,1
+39,StAug2,FL,Invasive,116,7,Buffer,high,PT,Different,Dead,1
+40,StAug2,FL,Invasive,16,7,Buffer,high,PT,Different,Dead,1
+41,StAug2,FL,Invasive,70,7,Buffer,high,PT,Different,Dead,1
+42,StAug2,FL,Invasive,63,7,Buffer,high,PT,Different,Dead,1
+43,StAug2,FL,Invasive,13,8,Buffer,low,PT,Different,Dead,1
+44,StAug2,FL,Invasive,107,8,Buffer,low,PT,Different,Dead,1
+45,StAug2,FL,Invasive,78,8,Buffer,low,PT,Different,Dead,1
+46,StAug2,FL,Invasive,58,8,Buffer,low,PT,Different,Dead,1
+47,StAug2,FL,Invasive,73,8,Buffer,low,PT,Different,Dead,1
+48,StAug2,FL,Invasive,102,8,Buffer,low,PT,Different,Alive,NA
+49,StAug2,FL,Invasive,34,9,WSM,low,PT,Different,Alive,NA
+50,StAug2,FL,Invasive,120,9,WSM,low,PT,Different,Alive,NA
+51,StAug2,FL,Invasive,92,9,WSM,low,PT,Different,Dead,1
+52,StAug2,FL,Invasive,24,9,WSM,low,PT,Different,Alive,NA
+53,StAug2,FL,Invasive,80,9,WSM,low,PT,Different,Alive,NA
+54,StAug2,FL,Invasive,8,9,WSM,low,PT,Different,Dead,1
+55,StAug2,FL,Invasive,111,10,WSM,high,PT,Different,Dead,1
+56,StAug2,FL,Invasive,85,10,WSM,high,PT,Different,Dead,1
+57,StAug2,FL,Invasive,39,10,WSM,high,PT,Different,Alive,NA
+58,StAug2,FL,Invasive,45,10,WSM,high,PT,Different,Alive,NA
+59,StAug2,FL,Invasive,71,10,WSM,high,PT,Different,Dead,1
+60,StAug2,FL,Invasive,37,10,WSM,high,PT,Different,Alive,NA
+61,PI493292,PT, Native,53,1,Buffer,none,none,NA,Dead,1
+62,PI493292,PT, Native,17,1,Buffer,none,none,NA,Alive,NA
+63,PI493292,PT, Native,101,1,Buffer,none,none,NA,Dead,1
+64,PI493292,PT, Native,67,1,Buffer,none,none,NA,Alive,NA
+65,PI493292,PT, Native,86,1,Buffer,none,none,NA,Dead,1
+66,PI493292,PT, Native,40,1,Buffer,none,none,NA,Dead,1
+67,PI493292,PT, Native,104,2,WSM,none,none,NA,Alive,NA
+68,PI493292,PT, Native,105,2,WSM,none,none,NA,Alive,NA
+69,PI493292,PT, Native,89,2,WSM,none,none,NA,Dead,1
+70,PI493292,PT, Native,115,2,WSM,none,none,NA,Alive,NA
+71,PI493292,PT, Native,64,2,WSM,none,none,NA,Dead,1
+72,PI493292,PT, Native,9,2,WSM,none,none,NA,Dead,1
+73,PI493292,PT, Native,43,3,Buffer,high,FL,Different,Dead,1
+74,PI493292,PT, Native,100,3,Buffer,high,FL,Different,Dead,1
+75,PI493292,PT, Native,79,3,Buffer,high,FL,Different,Dead,1
+76,PI493292,PT, Native,22,3,Buffer,high,FL,Different,Dead,1
+77,PI493292,PT, Native,31,3,Buffer,high,FL,Different,Dead,1
+78,PI493292,PT, Native,47,3,Buffer,high,FL,Different,Dead,1
+79,PI493292,PT, Native,99,4,Buffer,low,FL,Different,Dead,1
+80,PI493292,PT, Native,27,4,Buffer,low,FL,Different,Alive,NA
+81,PI493292,PT, Native,46,4,Buffer,low,FL,Different,Alive,NA
+82,PI493292,PT, Native,83,4,Buffer,low,FL,Different,Alive,NA
+83,PI493292,PT, Native,7,4,Buffer,low,FL,Different,Dead,1
+84,PI493292,PT, Native,81,4,Buffer,low,FL,Different,Dead,1
+85,PI493292,PT, Native,88,5,WSM,low,FL,Different,Dead,1
+86,PI493292,PT, Native,52,5,WSM,low,FL,Different,Dead,1
+87,PI493292,PT, Native,33,5,WSM,low,FL,Different,Dead,1
+88,PI493292,PT, Native,65,5,WSM,low,FL,Different,Alive,NA
+89,PI493292,PT, Native,29,5,WSM,low,FL,Different,Alive,NA
+90,PI493292,PT, Native,60,5,WSM,low,FL,Different,Dead,1
+91,PI493292,PT, Native,59,6,WSM,high,FL,Different,Dead,1
+92,PI493292,PT, Native,21,6,WSM,high,FL,Different,Dead,1
+93,PI493292,PT, Native,84,6,WSM,high,FL,Different,Dead,1
+94,PI493292,PT, Native,11,6,WSM,high,FL,Different,Alive,NA
+95,PI493292,PT, Native,55,6,WSM,high,FL,Different,Alive,NA
+96,PI493292,PT, Native,110,6,WSM,high,FL,Different,Alive,NA
+97,PI493292,PT, Native,44,7,Buffer,high,PT,Same,Dead,1
+98,PI493292,PT, Native,77,7,Buffer,high,PT,Same,Dead,1
+99,PI493292,PT, Native,14,7,Buffer,high,PT,Same,Dead,1
+100,PI493292,PT, Native,113,7,Buffer,high,PT,Same,Dead,1
+101,PI493292,PT, Native,51,7,Buffer,high,PT,Same,Dead,1
+102,PI493292,PT, Native,1,7,Buffer,high,PT,Same,Dead,1
+103,PI493292,PT, Native,91,8,Buffer,low,PT,Same,Dead,1
+104,PI493292,PT, Native,95,8,Buffer,low,PT,Same,Dead,1
+105,PI493292,PT, Native,114,8,Buffer,low,PT,Same,Dead,1
+106,PI493292,PT, Native,4,8,Buffer,low,PT,Same,Dead,1
+107,PI493292,PT, Native,26,8,Buffer,low,PT,Same,Dead,1
+108,PI493292,PT, Native,93,8,Buffer,low,PT,Same,Alive,NA
+109,PI493292,PT, Native,41,9,WSM,low,PT,Same,Alive,NA
+110,PI493292,PT, Native,103,9,WSM,low,PT,Same,Alive,NA
+111,PI493292,PT, Native,10,9,WSM,low,PT,Same,Alive,NA
+112,PI493292,PT, Native,23,9,WSM,low,PT,Same,Dead,1
+113,PI493292,PT, Native,5,9,WSM,low,PT,Same,Alive,NA
+114,PI493292,PT, Native,118,9,WSM,low,PT,Same,Alive,NA
+115,PI493292,PT, Native,50,10,WSM,high,PT,Same,Dead,1
+116,PI493292,PT, Native,49,10,WSM,high,PT,Same,Dead,1
+117,PI493292,PT, Native,106,10,WSM,high,PT,Same,Dead,1
+118,PI493292,PT, Native,15,10,WSM,high,PT,Same,Dead,1
+119,PI493292,PT, Native,42,10,WSM,high,PT,Same,Dead,1
+120,PI493292,PT, Native,87,10,WSM,high,PT,Same,Dead,1
