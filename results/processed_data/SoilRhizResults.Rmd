@@ -1,0 +1,603 @@
+---
+title: "Data for Soil Rhizobia Paper"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# FLM018: Rhizobia confer protection against pathogenic effect of soil microbiome in M. polymorpha
+
+##  ====== Project Description ========
+#### This is a project initiated by Katie Wozniak where she grew 12 genotypes of *Medicago polymorpha* in the presence of soil inoculates and/or rhizobia. The initial project (Trapping experiment) used soil from 8 different locations in either Florida or Portugal. The second part of the experiment, Katie used only two MP genotypes and location matching soil at low and high concentrations. In both experiments, WSM was the rhizobia used for inoculations.
+
+```{r packages, message=FALSE}
+library(ggplot2)
+library(reshape2)
+library(plyr)
+library(dplyr)
+library(car)
+library(multcomp)
+library(data.table)
+library(lme4)
+library(lmerTest)
+library(emmeans)
+```
+
+
+
+```{r Working Dir, echo=FALSE}
+setwd("~/Documents/Projects/Rhizobia_Pathogenic_Soil/results/processed_data/")
+```
+
+```{r datasets}
+SRMort <- read.csv("Soil_Rhiz_All_Data20Feb2018.csv")
+TrapMort <- read.csv("Trapping_Alll_Data20Feb2018.csv")
+
+SRMort <- within(SRMort, Soil <- as.factor(paste(SoilConc, Inoculate)))
+```
+
+
+## Trapping Experiment
+
+### Mortality
+
+I compared survival rate using two models, in the first, I used the *Medicago* genotypes as a random variable along with a variable "Treat" that refers to the addition of soil, buffer, or WSM. The second model uses the variable "Treatment", which divides the soil variable into their identities. However, due to a deficiency of DFs, Genotype can not be included.
+
+```{r Trapping mortality models tested 1, warning=FALSE}
+MortMod <- glmer(as.factor(Dead_0) ~ Treat * Range + (1 | Genotype), family = binomial(link = "logit"), data = TrapMort)
+
+MortMod2 <- glm(as.factor(Dead_0) ~ Treatment * Range, family = binomial(link = "logit"), data = TrapMort)
+```
+
+```{r Trapping mortality models tested 1 results, echo=FALSE}
+car::Anova(MortMod) 
+anova(MortMod2, test = "Chisq")
+
+TrapBio <- subset(TrapMort, Treat != "Soil")
+
+```
+
+ The results show that Treat(ment) **is significant** but that Range **is not significant**.
+
+### Biomass
+
+I don't think the Biomass data should be included for this portion of the paper since data was only taken on the WSM and buffer plants.  The results show that Treat(ment) **is significant** but that Range **is not significant** for all data.
+
+#### Shoot data
+
+```{r Trapping Shoot Data}
+ShootMod <- lmer(ShootWeight ~ Treatment * Range + (1| Genotype), data = TrapBio)
+
+```
+
+```{r Trapping Shoot Results and fig, echo=FALSE, warning=FALSE}
+anova(ShootMod)
+ggplot(TrapBio, aes(x = Treatment, y = ShootWeight, colour = Range)) + stat_summary(fun.data = "mean_se") + theme_classic() + labs(x = "Treatment", y = "Shoot Weight (mg)", title = "Trapping Experiment Shoot Weight 21 Feb 2018")
+```
+
+
+#### Root data
+```{r Trapping Root mod}
+RootMod <- lmer(RootWeight ~ Treatment * Range + (1| Genotype), data = TrapBio)
+```
+
+```{r Trapping Root Results, echo= FALSE, warning= FALSE}
+anova(RootMod)
+ggplot(TrapBio, aes(x = Treatment, y = RootWeight, colour = Range)) + stat_summary(fun.data = "mean_se") + theme_classic() + labs(x = "Treatment", y = "Root Weight (mg)", title = "Trapping Experiment Root Weight 21 Feb 2018") 
+```
+
+#### Nodule Number Data
+
+```{r Nod Num mod}
+NNMod <- lmer(NodNum ~ Range + (1| Genotype), data = TrapBio)
+```
+
+```{r Nod Num results, echo = FALSE, warning = FALSE}
+anova(NNMod)
+ggplot(TrapBio, aes(x = Range, y = NodNum)) + stat_summary(fun.data = "mean_se") + theme_classic() + labs(x = "Treatment", y = "Nodule Number", title = "Trapping Experiment Nodule Number 21 Feb 2018")  + coord_cartesian(ylim = c(0,30))
+```
+
+#### Nodule Weight Data
+```{r Nod Weight mod}
+NWMod <- lmer(NodWeight ~ Range + (1| Genotype), data = TrapBio)
+```
+
+```{r Nod Weight results, echo=FALSE, warning= FALSE}
+anova(NWMod)
+ggplot(TrapBio, aes(x = Range, y = NodWeight)) + stat_summary(fun.data = "mean_se") + theme_classic() + labs(x = "Treatment", y = "Nodule Weight (mg)", title = "Trapping Experiment Nodule Weight 21 Feb 2018")  + coord_cartesian(ylim = c(0,.0035)) 
+```
+
+***
+
+## Soil plus/minus rhizobia Experiment
+
+### Mortality
+
+```{r sr treat factor, echo= FALSE}
+SRMort$Treatment <- as.factor(SRMort$Treatment)
+```
+
+First, I ran survival as a function of all 10 treatments as defined by Katie
+```{r sr mortality model}
+SRMortMod <- glm(DeadOrAlive ~ Treatment , family = binomial(link = "logit"), data = SRMort)
+```
+
+```{r sr mort mod results 1, echo= FALSE}
+anova(SRMortMod, test = "Chisq")
+```
+
+Treatment was *significant*. I also ran a Tukey mult comp test (results not shown). The only significance was between soil and buffer/wsm. All other comparisons were not significant.
+
+```{r sr mort fig 1, echo= FALSE}
+
+SRMort$Survival <- ifelse(SRMort$DeadOrAlive == "Alive", 1,0)
+ggplot(SRMort, aes(x = Treatment, y = Survival, colour = Inoculate, shape = SoilLocation)) + stat_summary(fun.data = "mean_se") + theme_classic() + labs(x = "Treatment", y = "Survival Rate", title = "SxR Experiment Mortality 21 Feb 2018") + facet_grid(. ~ SoilConc, scales = "free_x")
+```
+
+```{r sr mort fig 2, echo= FALSE}
+ggplot(SRMort, aes(x = SoilConc, y = Survival, colour = Inoculate)) + stat_summary(fun.data = "mean_se") + theme_classic() + labs(x = "Soil Concentration", y = "Survival Rate", title = "SxR Experiment Mortality 21 Feb 2018") #+ facet_grid(. ~ Match, scales = "free_x")
+```
+
+```{r sr mort fig 3, echo= FALSE}
+ggplot(SRMort, aes(x = Soil, y = Survival)) + stat_summary(fun.data = "mean_se") + theme_classic() + labs(x = "Soil Concentration", y = "Survival Rate", title = "SxR Experiment Mortality 21 Feb 2018") + facet_grid(. ~ Range, scales = "free_x") + theme(axis.text.x = element_text(angle = 45))
+
+
+ggplot(SRMort, aes(x = Soil, y = Survival, colour = SoilLocation)) + stat_summary(fun.data = "mean_se") + theme_bw() + labs(x = "Soil Concentration", y = "Survival Rate", title = "SxR Experiment Mortality 21 Feb 2018") + facet_grid(SoilLocation ~ Range, scales = "free_x") + theme(axis.text.x = element_text(angle = 45))
+```
+
+The final graph suggests that there might be an effect of soil location on mortality. 
+
+```{r sr mort mod 2}
+SRMortMod3 <- glm(DeadOrAlive ~ Soil * Range * SoilLocation, family = binomial(link = "logit"), data = SRMort)
+```
+
+```{r sr mort mod 2 results, echo = FALSE}
+anova(SRMortMod3, test = "Chisq")
+```
+
+
+To try and parse out differences between will run some multiple comparisons and maybe some different contrasts.
+
+``` {r contrasts sr}
+tt = lsmeans(SRMortMod3, specs = ~ Range | Soil:SoilLocation)
+dd = pairs(tt)
+summary(dd, by = NULL)
+pairs(dd, by = "Soil")
+```
+
+I found a this on line:[link](https://rdrr.io/cran/emmeans/f/inst/doc/FAQs.Rmd#NAs)
+
+> My ANOVA F is significant, but no pairwise comparisons are {#anova}
+This is a common misunderstanding of ANOVA. If F is significant, this implies only that some contrast among the means (or effects) is statistically significant (compared to a Scheffé critical value). That contrast may be very much unlike a pairwise comparison, especially when there are several means being compared. Another factor is that by default, P values for pairwise comparisons are adjusted using the Tukey method, and the adjusted P values can be quite a bit larger than the unadjusted ones. (But I definitely do not advocate using no adjustment to "repair" this problem.)
+
+
+### SR Biomass Data =====
+
+####   Shoot Data
+
+```{r SR shoot mod 1}
+ShootModSR <- lm(ShootWeight ~ Treatment * Range, data = SRMort)
+```
+
+```{r SR shoot mod 1 results, echo= FALSE}
+anova(ShootModSR) 
+```
+
+```{r SR shoot mod 2}
+ShootModSR <- lm(ShootWeight ~ Soil * Range * SoilLocation, data = SRMort)
+```
+
+```{r SR shoot mod 2 results, echo= FALSE, warning= FALSE}
+anova(ShootModSR) 
+```
+
+The main effects **are significantly different**
+
+```{r SR shoot mod 3 mult}
+ShootModSR <- lm(ShootWeight ~ Soil, data = SRMort)
+summary(glht(ShootModSR, mcp(Soil = "Tukey")))
+```
+
+```{r SR shoot fig, echo= FALSE, warning= FALSE} 
+
+ggplot(SRMort, aes(x = Soil, y = ShootWeight, colour = Range)) + stat_summary(fun.data = "mean_se") + theme_bw() + labs(x = "Treatment", y = "Shoot Weight (mg)", title = "S x R Experiment Shoot Weight 21 Feb 2018") + theme(axis.text.x = element_text(angle = 45))
+```
+
+
+```{r }
+mod <- lm(ShootWeight ~ Soil * Range, data = SRMort)
+tt = lsmeans(mod, specs = ~ Range | Soil)
+dd = pairs(tt)
+summary(dd, by = NULL)
+```
+
+
+Soil x Range is nearly significant, so will do comparisons of soil within each range
+
+```{r sr shoot range N}
+
+SRMort_N <- subset(SRMort, Range == " Native")
+ShootModSRs <- lm(ShootWeight ~ Soil , data = SRMort_N)
+anova(ShootModSRs)
+summary(glht(ShootModSRs, mcp(Soil = "Tukey")))
+```
+
+
+```{r sr shoot range I}
+SRMort_I <- subset(SRMort, Range == "Invasive")
+ShootModSRs <- lm(ShootWeight ~ Soil , data = SRMort_I)
+Anova(ShootModSRs, type = "3")
+summary(glht(ShootModSRs, mcp(Soil = "Tukey")))
+```
+
+
+### SR Biomass Data =====
+
+####   Root Data
+
+```{r sr root mod1}
+RootModSR <- lm(RootWeight ~ Treatment * Range, data = SRMort)
+anova(RootModSR) 
+```
+
+```{r sr root mod2}
+RootModSR <- lm(RootWeight ~ Soil * Range * SoilLocation, data = SRMort)
+anova(RootModSR)
+```
+
+
+```{r sr root fig, echo= FALSE, warning=FALSE}
+ ggplot(SRMort, aes(x = Soil, y = RootWeight)) + stat_summary(fun.data = "mean_se") + theme_bw() + labs(x = "Treatment", y = "Root Weight (mg)", title = "S x R Experiment Root Weight 21 Feb 2018") + facet_grid(SoilLocation ~ Range, scales = "free_x") + theme(axis.text.x = element_text(angle = 45))
+```
+
+Root biomass show **significant** differences in main effects and some interactions.
+
+``` {r contrasts roots sr}
+tt = lsmeans(RootModSR, specs = ~ Range | Soil:SoilLocation)
+dd = pairs(tt)
+summary(dd, by = NULL)
+pairs(dd, by = "Soil")
+```
+
+
+####   Nodule Number Data
+```{r sr nod num mod}
+NNModSR <- lm(NodNum ~ Treatment * Range, data = SRMort)
+anova(NNModSR) 
+
+NNModSR <- lm(NodNum ~ Soil * Range * SoilLocation, data = SRMort)
+anova(NNModSR) 
+```
+
+```{r sr nod num fig, echo=FALSE, warning= FALSE}
+ggplot(SRMort, aes(x = Soil, y = NodNum)) + stat_summary(fun.data = "mean_se") + theme_classic() + labs(x = "Treatment", y = "Nodule Number", title = "S x R Experiment Nodule Number 21 Feb 2018") + facet_grid(SoilLocation ~ Range, scales = "free_x") + theme(axis.text.x = element_text(angle = 45))
+```
+
+Soil x Range interaction was **significant** so looked at each within range for nodule number.
+
+```{r}
+# Native 
+NNModSRs <- lm(NodNum ~ Soil , data = SRMort_N)
+anova(NNModSRs)
+summary(glht(NNModSRs, mcp(Soil = "Tukey")))
+
+# Invasive
+NNModSRs <- lm(NodNum ~ Soil , data = SRMort_I)
+Anova(NNModSRs, type = "3")
+summary(glht(NNModSRs, mcp(Soil = "Tukey")))
+```
+
+
+####   Nodule Weight Data
+
+```{r sr nod wt mod}
+NWModSR <- lm(NodWeight ~ Treatment * Range, data = SRMort)
+anova(NWModSR) 
+
+NWModSR <- lm(NodWeight ~ Soil * Range * SoilLocation, data = SRMort)
+anova(NWModSR) 
+```
+
+```{r sr nod wt fig, echo=FALSE, warning= FALSE}
+ggplot(SRMort, aes(x = Soil, y = NodWeight)) + stat_summary(fun.data = "mean_se") + theme_classic() + labs(x = "Treatment", y = "Nodule Weight", title = "S x R Experiment Nodule Weight 23 Feb 2018") + facet_grid(SoilLocation ~ Range, scales = "free_x") + theme(axis.text.x = element_text(angle = 45))
+```
+
+ ## Here is all of the data that was used in the results section, I didn't have time to organize it with thoughts to try and get it to you before your flight but I think that it is understandable.
+ 
+```{r feb 28 data}
+ # 26 Feb 2018
+# testing the impact of soil on rhizobia
+# SRMort_no_none has soil only removed
+SRMort <- within(SRMort, Root_Shoot <- 1 / Shoot_Root)
+ SRMort_no_none <- subset(SRMort, SoilConc != "none")
+
+# Mortality
+mod <- glm(DeadOrAlive ~ Soil, family = binomial(link = "logit"), data = SRMort_no_none)
+anova(mod, test = "Chisq")
+
+mod <- glm(DeadOrAlive ~ SoilConc * Inoculate, family = binomial(link = "logit"), data = SRMort_no_none)
+anova(mod, test = "Chisq")
+
+#SHoot - will continue with this b/c of line 320
+mod <- lm(ShootWeight ~ SoilConc * Inoculate, data = SRMort_no_none)
+anova(mod)
+ggplot(SRMort_no_none, aes(x = Inoculate, y = ShootWeight, colour = SoilConc)) + stat_summary(fun.data = "mean_se")
+
+mod <- lm(ShootWeight ~ Soil, data = SRMort_no_none)
+anova(mod)
+ggplot(SRMort_no_none, aes(x = Soil, y = ShootWeight)) + stat_summary(fun.data = "mean_se")
+
+# All high buffer plants died!
+
+SRMortSub2 <- subset(SRMort_no_none, Inoculate == "WSM")
+SRMortSub3 <- subset(SRMort, Inoculate == "WSM")
+
+#Mortality
+mod <- glm(DeadOrAlive ~ SoilConc * SoilLocation * Range, family = binomial(link = "logit"), data = SRMortSub2)
+anova(mod, test = "Chisq")
+
+tt = lsmeans(mod, specs = ~ SoilLocation | SoilConc:Range)
+dd = pairs(tt)
+summary(dd, by = NULL)
+
+tt = lsmeans(mod, specs = ~ SoilConc | SoilLocation:Range)
+dd = pairs(tt)
+summary(dd, by = NULL)
+
+tt = lsmeans(mod, specs = ~ Range | SoilLocation:SoilConc)
+dd = pairs(tt)
+summary(dd, by = NULL)
+
+
+
+ggplot(SRMortSub2, aes(x = SoilConc, y = Survival, colour = SoilConc)) + stat_summary(fun.data = "mean_se") + coord_cartesian(ylim = c(0,1)) +theme_bw()
+
+mod <- glm(DeadOrAlive ~ SoilConc * SoilLocation * Range, family = binomial(link = "logit"), data = SRMortSub3)
+anova(mod, test = "Chisq")
+
+ggplot(SRMortSub3, aes(x = SoilConc, y = Survival, colour = SoilConc)) + stat_summary(fun.data = "mean_se") + coord_cartesian(ylim = c(0,1)) +theme_bw()
+
+tt = lsmeans(mod, specs = ~ SoilLocation | SoilConc:Range)
+dd = pairs(tt)
+summary(dd, by = NULL)
+
+tt = lsmeans(mod, specs = ~ SoilConc | SoilLocation:Range)
+dd = pairs(tt)
+summary(dd, by = NULL)
+
+tt = lsmeans(mod, specs = ~ Range | SoilLocation:SoilConc)
+dd = pairs(tt)
+summary(dd, by = NULL)
+
+
+
+# I you just compare high vs low WSM, there is a significant difference for survival. If no soil is included, then it becomes marginal due to ns difference from none treatment
+
+# Shoot weight
+
+mod <- lm(ShootWeight ~ SoilConc, data = SRMortSub2)
+anova(mod)
+ggplot(SRMortSub2, aes(x = SoilConc, y = ShootWeight, colour = SoilConc)) + stat_summary(fun.data = "mean_se")
+
+
+mod <- lm(ShootWeight ~ SoilConc, data = SRMortSub3)
+anova(mod)
+ggplot(SRMortSub3, aes(x = SoilConc, y = ShootWeight, colour = SoilConc)) + stat_summary(fun.data = "mean_se")
+summary(glht(mod, mcp(SoilConc = "Tukey")))
+
+# No sig difference for either subset for shoot weight
+
+
+# Root weight
+
+mod <- lm(RootWeight ~ SoilConc, data = SRMortSub2)
+anova(mod)
+ggplot(SRMortSub2, aes(x = SoilConc, y = RootWeight, colour = SoilConc)) + stat_summary(fun.data = "mean_se")
+
+
+mod <- lm(RootWeight ~ SoilConc, data = SRMortSub3)
+anova(mod)
+ggplot(SRMortSub3, aes(x = SoilConc, y = RootWeight, colour = SoilConc)) + stat_summary(fun.data = "mean_se")
+
+# No sig diff for either subset, but there is a trend for increased root mass with decreasing soil
+
+
+# Root:Shoot
+mod <- lm(Root_Shoot ~ SoilConc, data = SRMortSub2)
+anova(mod)
+ggplot(SRMortSub2, aes(x = SoilConc, y = Root_Shoot, colour = SoilConc)) + stat_summary(fun.data = "mean_se")
+
+
+mod <- lm(Root_Shoot ~ SoilConc, data = SRMortSub3)
+anova(mod)
+ggplot(SRMortSub3, aes(x = SoilConc, y = Root_Shoot, colour = SoilConc)) + stat_summary(fun.data = "mean_se")
+summary(glht(mod, mcp(SoilConc = "Tukey")))
+
+# no sig diff for first subset, but second is significant ( p = 0.043). There is no diff between H-L, sig between N-L, marg between N-H.
+
+# Nod number
+
+mod <- lm(NodNum ~ SoilConc, data = SRMortSub2)
+anova(mod)
+ggplot(SRMortSub2, aes(x = SoilConc, y = NodNum, colour = SoilConc)) + stat_summary(fun.data = "mean_se")
+
+
+mod <- lm(NodNum ~ SoilConc, data = SRMortSub3)
+anova(mod)
+ggplot(SRMortSub3, aes(x = SoilConc, y = NodNum, colour = SoilConc)) + stat_summary(fun.data = "mean_se")
+summary(glht(mod, mcp(SoilConc = "Tukey")))
+
+# No sig diff for either subset, but there is a trend for increased nod number with decreasing soil
+
+# Nod Weight
+
+mod <- lm(NodWeight ~ SoilConc, data = SRMortSub2)
+anova(mod)
+ggplot(SRMortSub2, aes(x = SoilConc, y = NodWeight, colour = SoilConc)) + stat_summary(fun.data = "mean_se")
+
+
+mod <- lm(NodWeight ~ SoilConc, data = SRMortSub3)
+anova(mod)
+ggplot(SRMortSub3, aes(x = SoilConc, y = NodWeight, colour = SoilConc)) + stat_summary(fun.data = "mean_se")
+summary(glht(mod, mcp(SoilConc = "Tukey")))
+
+# No sig diff for either subset, but there is a trend for increased nod weight with decreasing soil
+
+
+# Now running models to see if there is a difference between genotypes
+#Mortality
+mod <- glm(DeadOrAlive ~ SoilConc * Genotype, family = binomial(link = "logit"), data = SRMortSub2)
+anova(mod, test = "Chisq")
+
+ggplot(SRMortSub2, aes(x = SoilConc, y = Survival, colour = Genotype)) + stat_summary(fun.data = "mean_se") + coord_cartesian(ylim = c(0,1)) +theme_bw() + facet_wrap(~Genotype)
+
+mod <- glm(DeadOrAlive ~ SoilConc * Genotype, family = binomial(link = "logit"), data = SRMortSub3)
+anova(mod, test = "Chisq")
+
+ggplot(SRMortSub3, aes(x = SoilConc, y = Survival, colour = Genotype)) + stat_summary(fun.data = "mean_se") + coord_cartesian(ylim = c(0,1)) +theme_bw() + facet_wrap(~ Genotype)
+
+
+# Genotype NS for mortality for either
+
+# Shoot weight
+
+mod <- lm(ShootWeight ~ SoilConc* Genotype, data = SRMortSub2)
+anova(mod)
+ggplot(SRMortSub2, aes(x = SoilConc, y = ShootWeight, colour = Genotype)) + stat_summary(fun.data = "mean_se") + facet_wrap(~ Genotype)
+
+
+mod <- lm(ShootWeight ~ SoilConc * Genotype, data = SRMortSub3)
+anova(mod)
+ggplot(SRMortSub3, aes(x = SoilConc, y = ShootWeight, colour = Genotype)) + stat_summary(fun.data = "mean_se") + facet_wrap(~ Genotype)
+
+tt = emmeans(mod,  ~ SoilConc|Genotype)
+dd = pairs(tt)
+summary(dd, by = NULL)
+pairs(tt, simple = "Genotype")
+
+tt = emmeans(mod,  ~ Genotype| SoilConc)
+dd = pairs(tt)
+summary(dd, by = NULL)
+pairs(tt, simple = "Genotype")
+
+# Using emmeans, there is a difference between ST. Aug and PI493292 at low WSM levels.
+
+
+
+
+# Root weight
+
+mod <- lm(RootWeight ~ SoilConc * Genotype, data = SRMortSub2)
+anova(mod)
+ggplot(SRMortSub2, aes(x = SoilConc, y = RootWeight, colour = Genotype)) + stat_summary(fun.data = "mean_se") + facet_wrap(~ Genotype)
+
+
+mod <- lm(RootWeight ~ SoilConc * Genotype, data = SRMortSub3)
+anova(mod)
+ggplot(SRMortSub3, aes(x = SoilConc, y = RootWeight, colour = Genotype)) + stat_summary(fun.data = "mean_se") + facet_wrap(~ Genotype)
+
+tt = emmeans(mod,  ~ SoilConc|Genotype)
+dd = pairs(tt)
+summary(dd, by = NULL)
+pairs(tt, simple = "Genotype")
+
+tt = emmeans(mod,  ~ Genotype| SoilConc)
+dd = pairs(tt)
+summary(dd, by = NULL)
+# There is a sig diff in first subset between soil conc, genotype and interaction. In the second, the interaction becomes marginal. Then ran emmeans and found that in  Native Geno: H-L and H-N are sig. None in Invasive. But the two genotypes vary sig within low and none for root weight.
+
+
+# Root:Shoot
+
+mod <- lm(Root_Shoot ~ SoilConc * Genotype, data = SRMortSub2)
+anova(mod)
+ggplot(SRMortSub2, aes(x = SoilConc, y = Root_Shoot, colour = Genotype)) + stat_summary(fun.data = "mean_se") + facet_wrap(~ Genotype)
+
+
+mod <- lm(Root_Shoot ~ SoilConc *Genotype, data = SRMortSub3)
+anova(mod)
+ggplot(SRMortSub3, aes(x = SoilConc, y = Root_Shoot, colour = Genotype)) + stat_summary(fun.data = "mean_se") + facet_wrap(~ Genotype)
+
+tt = emmeans(mod,  ~ SoilConc|Genotype)
+dd = pairs(tt)
+summary(dd, by = NULL)
+pairs(tt, simple = "Genotype")
+
+tt = emmeans(mod,  ~ Genotype| SoilConc)
+dd = pairs(tt)
+summary(dd, by = NULL)
+
+# In the first subset, only genotype is s ( p = 0.025). In the second, soil and genotype but not interaction are s (p = 0.022 for both). Using emmeans, in native sig dif between H-N and L-N (p = 0.0216, 0.0208) non for invasive. Between genotypes, only none is sig ( p= 0.0167)
+
+# Nod number
+
+mod <- lm(NodNum ~ SoilConc * Genotype, data = SRMortSub2)
+anova(mod)
+ggplot(SRMortSub2, aes(x = SoilConc, y = NodNum, Genotype = SoilConc)) + stat_summary(fun.data = "mean_se") + facet_wrap(~ Genotype)
+
+
+mod <- lm(NodNum ~ SoilConc * Genotype, data = SRMortSub3)
+anova(mod)
+ggplot(SRMortSub3, aes(x = SoilConc, y = NodNum, colour = Genotype)) + stat_summary(fun.data = "mean_se") + facet_wrap(~ Genotype)
+
+tt = emmeans(mod,  ~ SoilConc|Genotype)
+dd = pairs(tt)
+summary(dd, by = NULL)
+pairs(tt, simple = "Genotype")
+
+tt = emmeans(mod,  ~ Genotype| SoilConc)
+dd = pairs(tt)
+summary(dd, by = NULL)
+
+# Genotype and interaction are sig in both subsets. Within Native, H-L is sig (0.0278). Between genotypes, low is sig ( p < 0.001)
+
+# Nod Weight
+
+mod <- lm(NodWeight ~ SoilConc * Genotype, data = SRMortSub2)
+anova(mod)
+ggplot(SRMortSub2, aes(x = SoilConc, y = NodWeight, colour = Genotype)) + stat_summary(fun.data = "mean_se") + facet_wrap(~ Genotype)
+
+
+mod <- lm(NodWeight ~ SoilConc * Genotype, data = SRMortSub3)
+anova(mod)
+ggplot(SRMortSub3, aes(x = SoilConc, y = NodWeight, colour = Genotype)) + stat_summary(fun.data = "mean_se") + facet_wrap(~ Genotype)
+
+tt = emmeans(mod,  ~ SoilConc|Genotype)
+dd = pairs(tt)
+summary(dd, by = NULL)
+pairs(tt, simple = "Genotype")
+
+tt = emmeans(mod,  ~ Genotype| SoilConc)
+dd = pairs(tt)
+summary(dd, by = NULL)
+# First subset, genotype is sig ( p < 0.001). 2nd subset, soil and genotype are sig (p = 0.049, p < 0.001). Within genotype, native H-N is sig (p = 0.0224). between genotypes, sig for low and none ( p = 0.002, p = 0.0081)
+
+# Going back to trapping data to check for match x no match for mortality
+
+# Create match variable
+TrapMort <- within(TrapMort, MatchNoMatch <- ifelse(Range == "Native" & grepl("PT", Treatment), "Match", ifelse(Range == "Invaded" & grepl("FL", Treatment), "Match", "NoMatch")))
+
+TrapMortSub <- subset(TrapMort, Treat == "Soil")
+
+ggplot(TrapMortSub, aes(x = Genotype, y = Dead_0, colour = MatchNoMatch)) + stat_summary(fun.data = "mean_se") + coord_cartesian(ylim = c(0,1)) +theme_bw() + facet_wrap(~ Range, scales = "free_x")
+
+mod <- glm(as.factor(Dead_0) ~ MatchNoMatch * Range, family = binomial(link = "logit"), data = TrapMortSub)
+anova(mod, test = "Chisq")
+
+tt = emmeans(mod,  ~ Range| MatchNoMatch)
+dd = pairs(tt)
+summary(dd, by = NULL)
+
+tt = emmeans(mod,  ~ MatchNoMatch | Range)
+dd = pairs(tt)
+summary(dd, by = NULL)
+
+# No Significance
+
+
+
+
+
+```
